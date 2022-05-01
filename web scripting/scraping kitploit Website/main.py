@@ -12,9 +12,9 @@ def Get_News():
     posts = soup.findAll("div",class_="post-outer")
     output=[]
     for post in posts:
-    	heading = post.find("span",class_="fn").decode_contents().strip()
-    	link = post.find("a").get("href")
-    	output.append({heading,link})
+        heading = post.find("span",class_="fn").decode_contents().strip()
+        link = post.find("a").get("href")
+        output.append({heading,link})
     return output
 
 

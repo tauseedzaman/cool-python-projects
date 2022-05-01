@@ -28,9 +28,4 @@ def get_bbmf_news():
     return output
 
 
-print()
-for (i,post) in enumerate(get_bbmf_news()):
-    print(" 🌎 " + str(i))
-    print(post.get("title"))
-    print(post.get("link"))
-    print()
+print(get_bbmf_news())
